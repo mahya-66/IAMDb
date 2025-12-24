@@ -1,0 +1,42 @@
+.skeleton {
+  background: rgba(255, 255, 255, 0.2);
+  animation: pulse 1.4s infinite ease-in-out;
+  border-radius: 12px;
+}
+
+.logo-skel {
+  width: 160px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.search-skel {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+.skeleton-cats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pill {
+  width: 80px;
+  height: 28px;
+  border-radius: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}

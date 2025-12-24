@@ -1,0 +1,19 @@
+.heart-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.heart-btn:hover {
+  color: #a855f7;
+}
+
+.heart-btn.liked {
+  color: #a855f7;
+}
+
+.heart-btn.liked svg {
+  fill: #a855f7;
+}

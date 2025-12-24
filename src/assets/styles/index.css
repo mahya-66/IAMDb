@@ -1,0 +1,37 @@
+:root {
+  --sm-container-width: 100%;
+  --lg-container-width: 768px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #070d23;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  width: 100%;
+  --container-width: var(--sm-container-width);
+  margin: 0 auto;
+  padding: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    --container-width: var(--lg-container-width);
+    padding: 0 180px;
+  }
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}

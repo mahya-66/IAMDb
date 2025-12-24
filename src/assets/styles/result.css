@@ -1,0 +1,79 @@
+.result-header {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.query-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.query-text {
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.movie-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.movie-card {
+  display: flex;
+  gap: 14px;
+  padding: 12px;
+  position: relative;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.movie-card .heart-btn {
+  position: absolute;
+  top: -40px;
+  right: 12px;
+  z-index: 5;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+}
+
+.movie-card img {
+  width: calc((100% - 14px) * 0.25);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+.movie-info {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 8px;
+  padding-right: 50px;
+}
+.movie-info h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.meta {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.genre {
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.4;
+  margin-bottom: 10px;
+}
